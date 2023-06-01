@@ -1,13 +1,14 @@
+import styles from "./FeedbackOptions.module.css"
 function FeedbackOptions({ onGoodCl, onNeutralCl, onBadCl }) {
   return (
     <div>
-      <button onClick={onGoodCl}>
+      <button onClick={onGoodCl} className={styles.positive}>
         Good
       </button>
-      <button onClick={onNeutralCl}>
+      <button onClick={onNeutralCl} className={styles.button}>
         Neutral
       </button>
-      <button onClick={onBadCl}>
+      <button onClick={onBadCl} className={styles.negative}>
         Bad
       </button>
     </div>

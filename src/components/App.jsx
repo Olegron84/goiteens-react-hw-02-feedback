@@ -37,16 +37,16 @@ function App() {
       <div>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            onGoodcl={addGood}
-            onNeutralcl={addNeutral}
-            onBadcl={addBad}
+            onGoodCl={addGood}
+            onNeutralCl={addNeutral}
+            onBadCl={addBad}
           />
         </Section>
 
         <Section title="Statistics">
-          {/* {TotalFeedback() === 0 ? (
+          {TotalFeedback() === 0 ? (
             <Notification message="No feedback given" />
-          ) : ( */}
+          ) : (
             <Statistics
               good={good}
               neutral={neutral}
@@ -54,7 +54,7 @@ function App() {
               total={TotalFeedback()}
               positivePercentage={PositiveFeedbackPercent()}
             />
-          {/* )} */}
+           )}
         </Section>
       </div>
   );
